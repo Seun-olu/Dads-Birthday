@@ -1,0 +1,36 @@
+.gallery {
+  padding: var(--section-pad) 0;
+  background:
+    radial-gradient(
+      ellipse 70% 45% at 50% 18%,
+      rgba(196, 163, 90, 0.1),
+      transparent 55%
+    ),
+    var(--bg-deep);
+  overflow: hidden;
+}
+
+.gallery__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.35rem;
+}
+
+.gallery__count-link {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.25s ease;
+}
+
+.gallery__count-link:hover,
+.gallery__count-link:focus-visible {
+  color: var(--gold);
+  outline: none;
+}
