@@ -22,7 +22,9 @@ export function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
         >
-          Ọmọ-Ọba Boa Olugbewesa
+          <span>Omo-Oba</span>
+          <span className="footer__name-mono">Boa</span>
+          <span className="footer__name-long">Olugbewesa</span>
         </motion.h2>
 
         <motion.div

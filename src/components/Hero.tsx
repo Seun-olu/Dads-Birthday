@@ -35,7 +35,7 @@ export function Hero({ ready }: HeroProps) {
       <motion.div className="hero__media" style={{ y: imageY }}>
         <img
           src="/images/portrait-studio.webp"
-          alt="Studio portrait of Ọmọ-Ọba Boa Olugbewesa"
+          alt="Studio portrait of Omo-Oba Boa Olugbewesa"
           className="hero__image"
           width={1200}
           height={1500}
@@ -43,6 +43,7 @@ export function Hero({ ready }: HeroProps) {
           fetchPriority="high"
         />
         <div className="hero__scrim" />
+        <div className="hero__vignette" />
       </motion.div>
 
       <motion.div
@@ -52,8 +53,16 @@ export function Hero({ ready }: HeroProps) {
         animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
         transition={{ duration: 0.65, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
       >
-        <p className="hero__brand">Ọmọ-Ọba Boa Olugbewesa</p>
-        <h1 className="hero__headline">A life written in honour</h1>
+        <h1 className="hero__name">
+          <span className="hero__name-line">Omo-Oba</span>
+          <span className="hero__name-mono">Boa</span>
+          <span className="hero__name-line hero__name-line--long">
+            Olugbewesa
+          </span>
+        </h1>
+
+        <p className="hero__date">August 29, 2026</p>
+        <p className="hero__headline">Honouring 70 Years of Wisdom &amp; Grace</p>
         <p className="hero__support">
           Walk through the story of a father, mentor, and pillar — celebrated
           today by those who love him most.

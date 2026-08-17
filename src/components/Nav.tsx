@@ -47,7 +47,7 @@ export function Nav({ ready = true }: NavProps) {
     >
       <div className="nav__bar">
         <Link to="/" className="nav__brand" onClick={() => setMenuOpen(false)}>
-          ỌMỌ-ỌBA
+          OMO-OBA
         </Link>
 
         <button

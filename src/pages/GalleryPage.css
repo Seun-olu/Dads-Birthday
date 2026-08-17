@@ -15,15 +15,15 @@
   display: inline-flex;
   padding: 0.25rem;
   border: 1px solid var(--line);
-  background: rgba(243, 235, 224, 0.03);
+  background: rgba(var(--ink-rgb), 0.04);
 }
 
 .gallery-page__mode {
-  min-height: 40px;
+  min-height: 48px;
   padding: 0.45rem 0.95rem;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-muted);
   transition:
@@ -32,13 +32,13 @@
 }
 
 .gallery-page__mode.is-active {
-  color: var(--bg-deep);
-  background: var(--gold);
+  color: var(--bg);
+  background: var(--forest);
 }
 
 .gallery-page__meta {
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
@@ -55,10 +55,10 @@
 }
 
 .gallery-page__page-btn {
-  min-height: 44px;
+  min-height: 48px;
   padding: 0.4rem 0.2rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold);
 }
@@ -81,18 +81,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--ink-muted);
   border: 1px solid transparent;
 }
 
 .gallery-page__page-num.is-active {
   color: var(--gold);
-  border-color: rgba(196, 163, 90, 0.45);
+  border-color: rgba(var(--gold-rgb), 0.45);
 }
 
 .gallery-page__tip {
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   color: var(--ink-faint);
   text-align: center;
 }

@@ -50,13 +50,13 @@
   border-radius: 50%;
   background: var(--bg);
   border: 1.5px solid var(--gold);
-  box-shadow: 0 0 0 6px rgba(196, 163, 90, 0.08);
+  box-shadow: 0 0 0 6px rgba(var(--gold-rgb), 0.08);
 }
 
 .journey__year {
-  font-size: 0.66rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 0.45rem;
@@ -72,10 +72,10 @@
 
 .journey__text {
   max-width: 36rem;
-  font-size: 0.95rem;
-  font-weight: 300;
+  font-size: 1.12rem;
+  font-weight: 400;
   color: var(--ink-muted);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 @media (min-width: 900px) {
@@ -118,7 +118,7 @@
   }
 
   .journey__text {
-    font-size: 1rem;
-    line-height: 1.75;
+    font-size: 1.18rem;
+    line-height: 1.8;
   }
 }

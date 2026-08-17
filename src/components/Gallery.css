@@ -3,7 +3,7 @@
   background:
     radial-gradient(
       ellipse 70% 45% at 50% 18%,
-      rgba(196, 163, 90, 0.1),
+      rgba(var(--gold-rgb), 0.1),
       transparent 55%
     ),
     var(--bg-deep);
@@ -19,8 +19,8 @@
 }
 
 .gallery__count-link {
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
+  font-size: 0.92rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-faint);
   min-height: 44px;

@@ -1,18 +1,22 @@
 :root {
-  --bg-deep: #0f0a08;
-  --bg: #140e0c;
-  --bg-elevated: #1c1410;
-  --bg-soft: #241a15;
-  --ink: #f3ebe0;
-  --ink-muted: rgba(243, 235, 224, 0.68);
-  --ink-faint: rgba(243, 235, 224, 0.38);
-  --gold: #c4a35a;
-  --gold-soft: rgba(196, 163, 90, 0.22);
-  --gold-bright: #e0c27a;
-  --forest: #2f5d45;
-  --forest-soft: rgba(47, 93, 69, 0.28);
-  --caramel: #8b6544;
-  --line: rgba(243, 235, 224, 0.12);
+  --bg-deep: #e4d3bc;
+  --bg-deep-rgb: 228, 211, 188;
+  --bg: #ead9c0;
+  --bg-elevated: #f0e4ce;
+  --bg-soft: #dcc9ae;
+  --ink: #2e2219;
+  --ink-rgb: 46, 34, 25;
+  --ink-muted: rgba(46, 34, 25, 0.84);
+  --ink-faint: rgba(46, 34, 25, 0.64);
+  --gold: #6b3f24;
+  --gold-soft: rgba(107, 63, 36, 0.18);
+  --gold-bright: #85502e;
+  --gold-rgb: 107, 63, 36;
+  --emerald: #3f5340;
+  --emerald-mid: #4d6550;
+  --forest: #3f5340;
+  --forest-soft: rgba(63, 83, 64, 0.18);
+  --line: rgba(46, 34, 25, 0.16);
 
   --font-display: "Bodoni Moda", Georgia, "Times New Roman", serif;
   --font-body: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -41,10 +45,10 @@ body {
   min-height: 100dvh;
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--ink);
   background: var(--bg-deep);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -91,29 +95,29 @@ a {
 .section-label {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--forest);
   margin-bottom: 0.9rem;
 }
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(1.85rem, 8vw, 3.6rem);
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0;
   color: var(--ink);
   text-wrap: balance;
 }
 
 .section-lead {
   margin-top: 0.95rem;
-  max-width: 34rem;
-  font-size: 0.98rem;
-  font-weight: 300;
+  max-width: 38rem;
+  font-size: 1.15rem;
+  font-weight: 400;
   color: var(--ink-muted);
   line-height: 1.7;
 }
@@ -123,7 +127,7 @@ a {
   position: fixed;
   inset: 0;
   z-index: 40;
-  opacity: 0.03;
+  opacity: 0.045;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   contain: strict;
 }
@@ -150,14 +154,14 @@ a {
   }
 
   .section-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.28em;
+    font-size: 0.92rem;
+    letter-spacing: 0.14em;
     margin-bottom: 1.15rem;
   }
 
   .section-lead {
     margin-top: 1.2rem;
-    font-size: 1.08rem;
+    font-size: 1.22rem;
   }
 }
 

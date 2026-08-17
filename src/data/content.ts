@@ -59,9 +59,9 @@ export const GALLERY = {
 
 export const TRIBUTES = {
   label: 'Tributes',
-  title: 'Words waiting for voices',
+  title: 'Words from those who love him',
   lead:
-    'Guests can leave birthday wishes here later — for now, these spaces are ready to hold them.',
+    'Birthday wishes gathered from family, friends, colleagues, and well-wishers.',
   items: [
     {
       from: 'Family',

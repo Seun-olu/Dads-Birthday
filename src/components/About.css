@@ -9,7 +9,7 @@
     ),
     radial-gradient(
       ellipse 60% 50% at 90% 80%,
-      rgba(196, 163, 90, 0.08),
+      rgba(var(--gold-rgb), 0.08),
       transparent 50%
     ),
     var(--bg);
@@ -22,9 +22,9 @@
   background-image: repeating-linear-gradient(
     -12deg,
     transparent,
-    transparent 48px,
-    rgba(243, 235, 224, 0.015) 48px,
-    rgba(243, 235, 224, 0.015) 49px
+    transparent 46px,
+    rgba(var(--gold-rgb), 0.22) 46px,
+    rgba(var(--gold-rgb), 0.22) 48px
   );
   pointer-events: none;
 }
@@ -47,8 +47,8 @@
 }
 
 .about__body p {
-  font-size: 0.98rem;
-  font-weight: 300;
+  font-size: 1.15rem;
+  font-weight: 400;
   color: var(--ink-muted);
   line-height: 1.75;
 }
@@ -61,8 +61,8 @@
 }
 
 .about__facts dt {
-  font-size: 0.66rem;
-  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 0.35rem;
@@ -89,7 +89,7 @@
   }
 
   .about__body p {
-    font-size: 1.02rem;
+    font-size: 1.2rem;
     line-height: 1.8;
   }
 

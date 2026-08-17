@@ -10,8 +10,8 @@
 }
 
 .about-page__copy p {
-  font-size: 1.02rem;
-  font-weight: 300;
+  font-size: 1.18rem;
+  font-weight: 400;
   color: var(--ink-muted);
   line-height: 1.8;
 }
@@ -24,8 +24,8 @@
 }
 
 .about-page__facts dt {
-  font-size: 0.68rem;
-  letter-spacing: 0.2em;
+  font-size: 0.88rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 0.4rem;

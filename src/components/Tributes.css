@@ -13,10 +13,16 @@
   height: 40%;
   background: radial-gradient(
     ellipse at center,
-    rgba(47, 93, 69, 0.16),
+    var(--forest-soft),
     transparent 70%
   );
   pointer-events: none;
+}
+
+.tributes--standalone {
+  padding: 0;
+  background: transparent;
+  overflow: visible;
 }
 
 .tributes__list {
@@ -24,6 +30,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+}
+
+.tributes__status {
+  margin-top: 1.5rem;
+  font-size: 1.12rem;
+  font-weight: 400;
+  color: var(--ink-muted);
 }
 
 .tributes__item {
@@ -35,19 +48,30 @@
 
 .tributes__note {
   font-family: var(--font-display);
-  font-size: clamp(1.1rem, 4.5vw, 1.4rem);
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.45;
+  font-size: clamp(1.15rem, 3.2vw, 1.35rem);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.6;
   color: var(--ink);
   margin-bottom: 1rem;
+  white-space: pre-wrap;
 }
 
 .tributes__from {
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold);
+}
+
+.tributes__relation {
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  text-transform: none;
+  font-size: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -66,7 +90,7 @@
   }
 
   .tributes__note {
-    font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.38rem);
     margin-bottom: 1.25rem;
   }
 }
